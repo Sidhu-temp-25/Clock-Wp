@@ -1,0 +1,184 @@
+
+.clock-number,
+.clock-center{
+     transform: translate(-50%, -50%);
+}
+
+@keyframes motion {
+     0%{
+          transform: rotate(0deg);
+          /* transform-origin: right center; */
+     }
+     50%{
+          transform: rotate(180deg);
+          /* transform-origin: right center; */
+     }
+     100%{
+          transform: rotate(360deg);
+          /* transform-origin: right center; */
+     }
+}
+
+@keyframes anti_clockWise {
+     0%{
+          transform: rotate(0deg);
+     }
+     50%{
+          transform: rotate(180deg);
+     }
+     100%{
+          transform: rotate(360deg);
+     }
+}
+
+@keyframes clockWise {
+     0%{
+          transform: rotate(360deg);
+     }
+     50%{
+          transform: rotate(180deg);
+     }
+     100%{
+          transform: rotate(0deg);
+     }
+}
+
+.hour-hand{
+     transform: rotate(90deg);
+     transform-origin: right center;
+     /* animation: motion 643200s linear 0s infinite; */
+}
+.minute-hand{
+     transform: rotate(90deg);
+     transform-origin: right center;
+     /* animation: motion 3600s linear 5s infinite; */
+}
+.second-hand{
+     transform: rotate(90deg);
+     transform-origin: right center;
+     /* animation: motion 60s linear 0s infinite; */
+}
+
+.year_item{
+     position: absolute;
+     width: 60px; /* Size of the small numbered divs */
+     height: 50px;
+     /* background-color: #ef4444; Red background for numbered divs */
+     border-radius: 50%; /* Make them circular */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgb(41, 30, 255) 50%, rgb(75, 78, 255) 100%); */
+     color: rgb(255, 255, 255);
+     /* border: 0.5px solid black; */
+     font-weight: 600;
+     font-size: 1.3rem;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Shadow for numbered divs */
+     /* rotate: 90deg; */
+     /* animation: clockWise 10s linear 0s infinite; */
+}
+
+.other_item{
+     position: absolute;
+     width: 40px; /* Size of the small numbered divs */
+     height: 30px;
+     /* background-color: #ef4444; Red background for numbered divs */
+     border-radius: 50%; /* Make them circular */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgb(41, 30, 255) 50%, rgb(75, 78, 255) 100%); */
+     color: rgb(0, 0, 0);
+     /* border: 0.5px solid black; */
+     font-weight: 600;
+     font-size: 1rem;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Shadow for numbered divs */
+     /* rotate: 90deg; */
+     /* animation: clockWise 10s linear 0s infinite; */
+}
+
+.small_item{
+     position: absolute;
+     width: 25px; /* Size of the small numbered divs */
+     height: 20px;
+     /* background-color: #ef4444; Red background for numbered divs */
+     border-radius: 50%; /* Make them circular */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* background: linear-gradient(90deg,rgb(56, 255, 126) 0%, rgb(112, 255, 162) 50%, rgb(209, 255, 225) 100%); */
+     color: rgb(255, 255, 255);
+     /* border: 0.5px solid black; */
+     font-weight: 600;
+     font-size: 0.9rem;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Shadow for numbered divs */
+     /* rotate: 90deg; */
+     /* animation: clockWise 10s linear 0s infinite; */
+}
+
+.sec,
+.min,
+.hour,
+.date,
+.month,
+.day,
+.year{
+     rotate: 0deg;
+     /* animation: anti_clockWise 10s linear 0s infinite; */
+}
+
+.year{
+     background-color: #1A1423;
+     /* background: linear-gradient(90deg,rgba(255, 222, 222, 1) 0%, rgba(250, 163, 255, 1) 35%, rgba(255, 133, 186, 1) 100%); */
+}
+.sec{
+     color: rgb(255, 255, 255);
+     background-color: #2a1924;
+     /* background-color:hsla(0,0%,100%,1);
+     background-image:
+     radial-gradient(at 40% 20%, rgb(255, 236, 219) 0px, transparent 50%),
+     radial-gradient(at 80% 0%, rgb(182, 244, 255) 0px, transparent 50%),
+     radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+     radial-gradient(at 80% 50%, rgb(255, 199, 218) 0px, transparent 50%),
+     radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+     radial-gradient(at 80% 100%, rgb(202, 201, 255) 0px, transparent 50%),
+     radial-gradient(at 0% 0%, rgb(255, 185, 205) 0px, transparent 50%); */
+}
+.min{
+     color: rgb(255, 255, 255);
+     background-color: #41343a;
+     /* background: linear-gradient(90deg,rgb(229, 189, 255) 0%, rgba(255, 158, 158, 1) 50%, rgba(255, 223, 179, 1) 100%); */
+}
+.hour{
+     color: rgb(255, 255, 255);
+     background-color: #AB8476;
+     /* background: linear-gradient(90deg,rgb(255, 240, 180) 0%, rgb(255, 236, 212) 50%, rgb(238, 255, 161) 100%); */
+}
+.date{
+     color: rgb(33, 33, 33);
+     background-color: #96705B;
+     /* background: linear-gradient(90deg,rgba(255, 222, 222, 1) 0%, rgb(255, 245, 159) 35%, rgb(255, 244, 150) 100%); */
+}
+.month{
+     background-color: #ab8c7b;
+     /* background-color:hsla(0,0%,100%,1);
+     background-image:
+     radial-gradient(at 40% 20%, rgb(255, 236, 219) 0px, transparent 50%),
+     radial-gradient(at 80% 0%, rgb(182, 244, 255) 0px, transparent 50%),
+     radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+     radial-gradient(at 80% 50%, rgb(255, 199, 218) 0px, transparent 50%),
+     radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+     radial-gradient(at 80% 100%, rgb(202, 201, 255) 0px, transparent 50%),
+     radial-gradient(at 0% 0%, rgb(255, 185, 205) 0px, transparent 50%); */
+}
+.day{
+     background-color: #dbbeae;
+     /* background: linear-gradient(90deg,rgba(255, 222, 222, 1) 0%, rgb(255, 245, 159) 35%, rgb(255, 244, 150) 100%); */
+}
+
+
+
+.high_light{
+     background-color: white;
+     color: black;
+}
