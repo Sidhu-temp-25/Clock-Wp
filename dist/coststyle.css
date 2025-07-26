@@ -126,59 +126,61 @@
      rotate: 0deg;
      /* animation: anti_clockWise 10s linear 0s infinite; */
 }
-
-.year{
-     background-color: #1A1423;
-     /* background: linear-gradient(90deg,rgba(255, 222, 222, 1) 0%, rgba(250, 163, 255, 1) 35%, rgba(255, 133, 186, 1) 100%); */
-}
-.sec{
-     color: rgb(255, 255, 255);
-     background-color: #2a1924;
-     /* background-color:hsla(0,0%,100%,1);
-     background-image:
-     radial-gradient(at 40% 20%, rgb(255, 236, 219) 0px, transparent 50%),
-     radial-gradient(at 80% 0%, rgb(182, 244, 255) 0px, transparent 50%),
-     radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
-     radial-gradient(at 80% 50%, rgb(255, 199, 218) 0px, transparent 50%),
-     radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
-     radial-gradient(at 80% 100%, rgb(202, 201, 255) 0px, transparent 50%),
-     radial-gradient(at 0% 0%, rgb(255, 185, 205) 0px, transparent 50%); */
-}
-.min{
-     color: rgb(255, 255, 255);
-     background-color: #41343a;
-     /* background: linear-gradient(90deg,rgb(229, 189, 255) 0%, rgba(255, 158, 158, 1) 50%, rgba(255, 223, 179, 1) 100%); */
-}
-.hour{
-     color: rgb(255, 255, 255);
-     background-color: #AB8476;
-     /* background: linear-gradient(90deg,rgb(255, 240, 180) 0%, rgb(255, 236, 212) 50%, rgb(238, 255, 161) 100%); */
-}
-.date{
-     color: rgb(33, 33, 33);
-     background-color: #96705B;
-     /* background: linear-gradient(90deg,rgba(255, 222, 222, 1) 0%, rgb(255, 245, 159) 35%, rgb(255, 244, 150) 100%); */
-}
-.month{
-     background-color: #ab8c7b;
-     /* background-color:hsla(0,0%,100%,1);
-     background-image:
-     radial-gradient(at 40% 20%, rgb(255, 236, 219) 0px, transparent 50%),
-     radial-gradient(at 80% 0%, rgb(182, 244, 255) 0px, transparent 50%),
-     radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
-     radial-gradient(at 80% 50%, rgb(255, 199, 218) 0px, transparent 50%),
-     radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
-     radial-gradient(at 80% 100%, rgb(202, 201, 255) 0px, transparent 50%),
-     radial-gradient(at 0% 0%, rgb(255, 185, 205) 0px, transparent 50%); */
-}
-.day{
-     background-color: #dbbeae;
-     /* background: linear-gradient(90deg,rgba(255, 222, 222, 1) 0%, rgb(255, 245, 159) 35%, rgb(255, 244, 150) 100%); */
+/* --- PAGE BACKGROUND --- */
+body {
+  background: linear-gradient(135deg, #41343a 0%, #2a1924 50%, #1A1423 100%);
 }
 
+/* --- CIRCLE COLORS --- */
+.year {
+  background-color: #96705B !important;
+}
+.sec {
+  background-color: #a1866f !important;
+}
+.min {
+  background-color: #b49782 !important;
+}
+.hour {
+  background-color: #8b6d5c !important;
+}
+.date {
+  background-color: #baa384 !important;
+}
+.month {
+  background-color: #7c6650 !important;
+}
+.day {
+  background-color: #c8b39a !important;
+}
 
+/* --- Text Color for Circles --- */
+.year, .sec, .min, .hour, .date, .month, .day {
+  color: #e1dacc !important; /* Light text for legibility */
+}
 
-.high_light{
-     background-color: white;
-     color: black;
+/* --- Highlight for Active Value --- */
+.high_light {
+  background-color: #d4af7f !important;
+  color: #1A1423 !important;
+}
+
+/* Horizontal or vertical strip (e.g., .strip) */
+.strip {
+  background-color: #508D7C; /* Deep Teal for bold accent */
+  height: 8px;               /* adjust as needed */
+  width: 100%;               /* or layout-specific width */
+  border-radius: 4px;        /* optional for soft edges */
+  margin: 16px 0;            /* add spacing if desired */
+}
+
+/* For a highlight strip */
+.strip-highlight {
+  background-color: #d4af7f; /* Soft gold for attention */
+}
+
+/* For a subtle divider strip */
+.strip-divider {
+  background-color: #c8b39a; /* Light neutral tone */
+  height: 2px;
 }

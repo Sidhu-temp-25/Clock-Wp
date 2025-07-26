@@ -14,15 +14,15 @@
     <!-- npx @tailwindcss/cli -i ./src/input.css -o ./dist/style.css --watch -->
 </head>
 <header class="ml-20">
-    <i class="fa-regular fa-clock text-2xl" style="color: #5a3333"></i>
-    <span class="ml-7 text-2xl font-serif text-amber-900">By Snigdhendu</span>
+    <i class="fa-regular fa-clock text-2xl" style="color: #ffffff"></i>
+    <span class="ml-7 text-2xl font-serif text-white">By Snigdhendu</span>
 </header>
 <body class="w-[100vw] mt-5 flex flex-col justify-between overflow-x-hidden">
 
     <div class="clock_main w-[100%] flex justify-evenly">
 
         <div class="clock-container">
-            <div class="clock flex justify-center items-center w-96 h-96 mt-20 mx-5 border-4 rounded-[50%] border-gray-600 relative transform">
+            <div class="clock flex justify-center items-center w-96 h-96 mt-20 mx-5 border-4 rounded-[50%] border-gray-600 relative transform bg-white">
                 <div class="clock-number absolute top-[6%] left-[50%]" data-number="12">12</div>
                 <div class="clock-number absolute top-[13%] left-[72%]" data-number="1">1</div>
                 <div class="clock-number absolute top-[28%] left-[88%]" data-number="2">2</div>
@@ -51,35 +51,38 @@
             </div>
         </div> 
 
-        <div class="strip_clock flex gap-5 text-4xl relative bottom-14">
+        <div class="strip_clock flex gap-5 text-4xl relative bottom-14 text-white">
             <i class="fa-solid fa-arrow-right fa-beat-fade text-2xl relative top-24 h-20"></i>
 
-            <div class="hr1 h-60 w-20 bg-gray-900 rounded-b-[100px] border-2 flex flex-col items-center text-amber-50 py-10">
+            <div class="hr1 h-60 w-20 bg-[#ffb24e] rounded-b-[100px] border-2 flex flex-col items-center text-neutral-800 py-10">
                 <div class="context relative"></div>
             </div>
             
-            <div class="hr2 h-96 w-20 bg-gray-950 rounded-b-[100px] border-2 flex flex-col items-center text-amber-50 py-0 overflow-hidden">
+            <div class="hr2 h-96 w-20 bg-[#d4af7f] rounded-b-[100px] border-2 flex flex-col items-center text-amber-50 py-0 overflow-hidden">
                 <div class="context relative"></div>
             </div><span class="py-20">:</span>
 
-            <div class="min1 h-[35rem] w-20 bg-gray-900 rounded-b-[100px] border-2 flex flex-col items-center text-amber-50 py-20 overflow-hidden">
+            <div class="min1 h-[35rem] w-20 bg-[#ffb24e] rounded-b-[100px] border-2 flex flex-col items-center text-neutral-800 py-20 overflow-hidden">
                 <div class="context relative"></div>
             </div>
 
-            <div class="min2 h-72 w-20 bg-gray-950 rounded-b-[100px] border-2 flex flex-col items-center text-amber-50 py-10 overflow-hidden">
+            <div class="min2 h-72 w-20 bg-[#d4af7f] rounded-b-[100px] border-2 flex flex-col items-center text-white py-10 overflow-hidden">
                 <div class="context relative"></div>
             </div><span class="py-20">:</span>
 
-            <div class="sec1 h-80 w-20 bg-gray-800 rounded-b-[100px] border-2 flex flex-col items-center text-amber-50 py-20 overflow-hidden">
+            <div class="sec1 h-80 w-20 bg-[#ffc579] rounded-b-[100px] border-2 flex flex-col items-center text-black py-20 overflow-hidden">
                 <div class="context relative"></div>
             </div>
 
-            <div class="sec2 h-[40rem] w-20 bg-gray-900 rounded-b-[100px] border-2 flex flex-col items-center text-amber-50 py-10 overflow-hidden">
+            <div class="sec2 h-[40rem] w-20 bg-[#ffeacf] rounded-b-[100px] border-2 flex flex-col items-center text-black overflow-hidden">
                 <div class="context relative"></div>
             </div>
         </div>
     </div>
     
+    <audio src="Resources/slow-cinematic-clock-ticking-357979 (mp3cut.net).mp3"
+    loop
+    ></audio>
 
     <div class="running_time mt-20 mx-5 relative self-center">
         <div class="year h-[55rem] w-[55rem] border-4 rounded-[50%] relative rotate-164"></div>

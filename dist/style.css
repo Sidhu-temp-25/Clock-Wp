@@ -9,7 +9,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
-    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-amber-950: oklch(27.9% 0.077 45.635);
@@ -19,7 +18,9 @@
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-gray-950: oklch(13% 0.028 261.692);
     --color-neutral-600: oklch(43.9% 0 0);
+    --color-neutral-800: oklch(26.9% 0 0);
     --color-black: #000;
+    --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
@@ -182,29 +183,23 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
-  .top-2 {
-    top: calc(var(--spacing) * 2);
+  .static {
+    position: static;
+  }
+  .sticky {
+    position: sticky;
   }
   .top-20 {
     top: calc(var(--spacing) * 20);
   }
-  .top-22 {
-    top: calc(var(--spacing) * 22);
-  }
-  .top-23 {
-    top: calc(var(--spacing) * 23);
-  }
   .top-24 {
     top: calc(var(--spacing) * 24);
-  }
-  .top-25 {
-    top: calc(var(--spacing) * 25);
-  }
-  .top-28 {
-    top: calc(var(--spacing) * 28);
   }
   .top-33 {
     top: calc(var(--spacing) * 33);
@@ -259,6 +254,9 @@
   }
   .right-47 {
     right: calc(var(--spacing) * 47);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
   }
   .bottom-14 {
     bottom: calc(var(--spacing) * 14);
@@ -338,6 +336,9 @@
   .mx-10 {
     margin-inline: calc(var(--spacing) * 10);
   }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -347,11 +348,17 @@
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
   }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
+  }
   .ml-7 {
     margin-left: calc(var(--spacing) * 7);
   }
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
@@ -473,6 +480,9 @@
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -534,6 +544,66 @@
   .bg-\[\#1F271B\] {
     background-color: #1F271B;
   }
+  .bg-\[\#6e5e49\] {
+    background-color: #6e5e49;
+  }
+  .bg-\[\#8c6026\] {
+    background-color: #8c6026;
+  }
+  .bg-\[\#9a6c30\] {
+    background-color: #9a6c30;
+  }
+  .bg-\[\#9a6621\] {
+    background-color: #9a6621;
+  }
+  .bg-\[\#508D7C\] {
+    background-color: #508D7C;
+  }
+  .bg-\[\#876538\] {
+    background-color: #876538;
+  }
+  .bg-\[\#965500\] {
+    background-color: #965500;
+  }
+  .bg-\[\#b37f3c\] {
+    background-color: #b37f3c;
+  }
+  .bg-\[\#b0997a\] {
+    background-color: #b0997a;
+  }
+  .bg-\[\#b1772b\] {
+    background-color: #b1772b;
+  }
+  .bg-\[\#c2b4a2\] {
+    background-color: #c2b4a2;
+  }
+  .bg-\[\#c8b39a\] {
+    background-color: #c8b39a;
+  }
+  .bg-\[\#d2a76e\] {
+    background-color: #d2a76e;
+  }
+  .bg-\[\#d4af7f\] {
+    background-color: #d4af7f;
+  }
+  .bg-\[\#d4af7fffb24e\] {
+    background-color: #d4af7fffb24e;
+  }
+  .bg-\[\#d6bd9d\] {
+    background-color: #d6bd9d;
+  }
+  .bg-\[\#ffa632\] {
+    background-color: #ffa632;
+  }
+  .bg-\[\#ffb24e\] {
+    background-color: #ffb24e;
+  }
+  .bg-\[\#ffc579\] {
+    background-color: #ffc579;
+  }
+  .bg-\[\#ffeacf\] {
+    background-color: #ffeacf;
+  }
   .bg-amber-800 {
     background-color: var(--color-amber-800);
   }
@@ -558,11 +628,20 @@
   .bg-neutral-600 {
     background-color: var(--color-neutral-600);
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -593,6 +672,18 @@
   }
   .text-amber-900 {
     color: var(--color-amber-900);
+  }
+  .text-amber-950 {
+    color: var(--color-amber-950);
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-neutral-800 {
+    color: var(--color-neutral-800);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;

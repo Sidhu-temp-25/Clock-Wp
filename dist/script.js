@@ -28,10 +28,15 @@ function startTimer() {
 
             document.querySelector('.display_time_day').innerHTML=`${correntTime.getDate()}/${correntTime.getMonth()}/${correntTime.getFullYear()}   ${day}`;
         }
+        // document.querySelector('audio').play();
         grtTime();
     }, 1000);
 }
 startTimer();
+
+// window.addEventListener(('load'),()=>{
+//     document.querySelector('audio').play();
+// });
 
 
 
